@@ -1,40 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KSHS Robotics Programs</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Kelmscott Senior High School Robotics</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>Kelmscott Senior High School Robotics</h1>
+
+    <!-- Header Section -->
+    <header class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="logo.png" alt="KSHS Robotics" class="w-20 h-20">
+            <nav>
+                <a href="#" class="mx-2">Home</a>
+                <a href="#" class="mx-2">About</a>
+                <a href="#" class="mx-2">Programs</a>
+                <a href="#" class="mx-2">Contact</a>
+                <a href="ow/index.html" class="mx-2">Old Page</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <p>KSHS has a variety of robotics programs spanning across all grades.
-        Along with robotics classes we run enter teams into a variety of <a
-        href="https://www.firstinspires.org/">FIRST</a> competitions such as FIRST
-        Lego League and FIRST Robotics Competition.</p>
-        <section>
-            <h2>FLL</h2>
-            <p>KSHS first competed in FLL in 2018 but after 2019 went dormant for
-            multiple years. In 2023 KSHS entered a team for the first time in 4 years
-            comprised of a group of year 8s and 9s. This year we have started our
-            preparation early and are looking to send multiple teams with students
-            ranging from years 7 to 9.</p>
-        </section>
-        <section>
-            <h2>FRC</h2>
-            <p>This year we also plan to send a team to <a
-            href="https://waroboticsplayoffs.com/">WARP</a> to compete in the 2024
-            FIRST Robotics competition game. The team will be comprised of older students
-            allowing FLL students to transition into it after graduating from the FLL
-            program.</p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2023 KSHS Robotics Club</p>
+
+<!-- Hero Section -->
+<section class="hero text-white text-center py-32" style="position: relative; overflow: hidden;">
+    <video autoplay muted loop playsinline style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; object-fit: cover; transform: translate(-50%, -50%); z-index: -1;">
+        <source src="KSHS.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div style="position: relative; z-index: 1;">
+        <h1 class="text-4xl font-bold">Kelmscott Senior High School Robotics</h1>
+        <p class="text-xl my-4">A place were we practice our talents</p>
+        <button class="bg-blue-500 text-white px-6 py-3 rounded-lg">Learn More</button>
+    </div>
+</section>
+
+
+    <!-- Feature Section -->
+    <section class="features bg-gray-200 py-16">
+        <div class="container mx-auto grid grid-cols-3 gap-4">
+            <!-- Feature 1 -->
+            <div class="feature-card text-center p-4">
+                <i class="fas fa-robot text-4xl text-blue-500"></i>
+                <h2 class="text-2xl font-bold my-3">Multi team strategy</h2>
+                <p class="text-gray-600">We split our team members into subcatagories based on there skills and advancements</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature-card text-center p-4">
+                <i class="fas fa-cogs text-4xl text-blue-500"></i>
+                <h2 class="text-2xl font-bold my-3"> This Page is NOT COMPLETE!</h2>
+                <p class="text-gray-600">Bear with us as our web developer finishes of this site. Feel free to check out the old one for more information</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature-card text-center p-4">
+                <i class="fas fa-medal text-4xl text-blue-500"></i>
+                <h2 class="text-2xl font-bold my-3">WARP</h2>
+                <p class="text-gray-600">We are currently participating in the Western Australian Robotics competition! (WARP!)</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Individual Feature Sections -->
+<section class="individual-feature bg-cover bg-right text-white py-16"
+    style="background-image: url('insta-post.png')">
+    <div class="container mx-auto">
+        <div class="flex">
+            <div class="w-1/2">
+                <h2 class="text-3xl font-bold mb-4">aliquet praesent sodades</h2>
+                <p class="text-lg">aliquet praesent sodales ipsum null</p>
+                <button class="bg-blue-500 text-white px-6 py-3 rounded-lg">Learn More</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Sponsers Section -->
+    <section class="blog bg-gray-200 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Our Sponsers!</h2>
+            <!-- Blog Posts Go Here -->
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog bg-gray-100 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Latest Blog Posts</h2>
+            <!-- Blog Posts Go Here -->
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq bg-gray-200 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+            <!-- FAQ Content Goes Here -->
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team bg-gray-300 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Meet Our Team</h2>
+            <!-- Team Member Cards Go Here -->
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="newsletter bg-gray-100 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+            <!-- Newsletter Form Goes Here -->
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact bg-gray-200 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+            <!-- Contact Form Fields Go Here -->
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map bg-gray-300 py-16">
+        <div class="container mx-auto">
+            <!-- Google Maps Embed Goes Here -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <p>&copy; 2023 Kelmscott Senior High School Robotics</p>
+            <div>
+                <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/kshsrobotics/" class="mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
     </footer>
-    <script src="js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
 </body>
+
 </html>
