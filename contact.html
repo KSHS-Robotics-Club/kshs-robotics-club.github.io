@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta charset="UTF-8">
@@ -10,7 +9,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-
 <body class="bg-gray-200">
 
 <!-- Header Section -->
@@ -100,7 +98,7 @@
             message: document.getElementById('message').value
         };
 
-        fetch('https://kshs-form-production.up.railway.app/', {
+        fetch('https://kshs-form-production.up.railway.app/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -109,7 +107,11 @@
         })
         .then(response => response.json())
         .then(data => {
-            alert('Your message has been sent!');
+            if (data.success) {
+                alert('Your message has been sent!');
+            } else {
+                alert('There was an error sending your message: ' + data.message);
+            }
         })
         .catch(error => {
             alert('There was an error sending your message.');
@@ -120,3 +122,4 @@
 
 </body>
 </html>
+
