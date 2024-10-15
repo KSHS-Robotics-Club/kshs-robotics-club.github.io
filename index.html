@@ -8,6 +8,39 @@
     <title>Kelmscott Senior High School Robotics</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @media (max-width: 640px) {
+            .features .container {
+                grid-template-columns: 1fr;
+            }
+            .feature-card {
+                margin-bottom: 1rem;
+            }
+            .individual-feature .container .flex {
+                flex-direction: column;
+            }
+            .individual-feature .container .flex > div {
+                width: 100%;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .blog img {
+                max-width: 100%;
+                height: auto;
+            }
+            .footer .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer .container > div {
+                margin-top: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -26,8 +59,6 @@
     </div>
 </header>
 
-    </header>
-
 <!-- Hero Section -->
 <section class="hero text-white text-center py-32" style="position: relative; overflow: hidden;">
     <video autoplay muted loop playsinline style="position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; object-fit: cover; transform: translate(-50%, -50%); z-index: -1;">
@@ -41,111 +72,112 @@
     </div>
 </section>
 
-
-    <!-- Feature Section -->
-    <section class="features bg-gray-200 py-16">
-        <div class="container mx-auto grid grid-cols-3 gap-4">
-            <!-- Feature 1 -->
-            <div class="feature-card text-center p-4">
-                <i class="fas fa-robot text-4xl text-blue-500"></i>
-                <h2 class="text-2xl font-bold my-3">Multi team strategy</h2>
-                <p class="text-gray-600">Our team is split up into multiple subteams based off interests and tasks required for the robot and team generally.</p>
-            </div>
-            <!-- Feature 2 -->
-            <div class="feature-card text-center p-4">
-                <i class="fas fa-cogs text-4xl text-blue-500"></i>
-                <h2 class="text-2xl font-bold my-3"> This Page is NOT COMPLETE!</h2>
-                <p class="text-gray-600">Bear with us as our web developer finishes of this site. Feel free to check out the old one for more information</p>
-            </div>
-            <!-- Feature 3 -->
-            <div class="feature-card text-center p-4">
-                <i class="fas fa-medal text-4xl text-blue-500"></i>
-                <h2 class="text-2xl font-bold my-3">WARP</h2>
-                <p class="text-gray-600">We are currently preparing to compete in <a href="https://waroboticsplayoffs.com/">WARP</a>.</p>
-            </div>
+<!-- Feature Section -->
+<section class="features bg-gray-200 py-16">
+    <div class="container mx-auto grid grid-cols-3 gap-4">
+        <!-- Feature 1 -->
+        <div class="feature-card text-center p-4">
+            <i class="fas fa-robot text-4xl text-blue-500"></i>
+            <h2 class="text-2xl font-bold my-3">Multi team strategy</h2>
+            <p class="text-gray-600">Our team is split up into multiple subteams based off interests and tasks required for the robot and team generally.</p>
         </div>
-    </section>
+        <!-- Feature 2 -->
+        <div class="feature-card text-center p-4">
+            <i class="fas fa-cogs text-4xl text-blue-500"></i>
+            <h2 class="text-2xl font-bold my-3"> This Page is NOT COMPLETE!</h2>
+            <p class="text-gray-600">Bear with us as our web developer finishes of this site. Feel free to check out the old one for more information</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="feature-card text-center p-4">
+            <i class="fas fa-medal text-4xl text-blue-500"></i>
+            <h2 class="text-2xl font-bold my-3">WARP</h2>
+            <p class="text-gray-600">We are currently preparing to compete in <a href="https://waroboticsplayoffs.com/">WARP</a>.</p>
+        </div>
+    </div>
+</section>
 
 <!-- Individual Feature Sections -->
 <section class="individual-feature bg-cover bg-right text-white py-16"
     style="background-image: url('insta-post.png')">
-    <div class="container mx-auto">
-        <div class="flex">
-            <div class="w-1/2">
+    <div class="container mx-auto px-4 sm:px-0">
+        <div class="flex flex-col items-center sm:items-start">
+            <div class="w-full sm:w-1/2 text-center sm:text-left">
                 <h2 class="text-3xl font-bold mb-4">aliquet praesent sodades</h2>
-                <p class="text-lg">aliquet praesent sodales ipsum null</p>
-                <button class="bg-blue-500 text-white px-6 py-3 rounded-lg">Learn More</button>
+                <p class="text-lg mb-4">aliquet praesent sodales ipsum null</p>
+                <button class="bg-blue-500 text-white px-6 py-3 rounded-lg mx-auto sm:mx-0">Learn More</button>
             </div>
         </div>
     </div>
 </section>
 
 
-    <!-- Sponsers Section -->
-    <section class="blog bg-gray-200 py-16">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4">Our Sponsors!</h2>
+<!-- Sponsors Section -->
+<section class="blog bg-gray-200 py-16">
+    <div class="container mx-auto px-4 sm:px-0">
+        <h2 class="text-3xl font-bold mb-4 text-center sm:text-left">Our Sponsors!</h2>
+        <div class="text-center sm:text-left">
             <a href="https://www.wa.gov.au/organisation/department-of-primary-industries-and-regional-development">
-               <img width="500" height="500" src="sponsor.svg" alt="Sponsor Logo" />
+               <img class="mx-auto sm:mx-0" width="500" height="500" src="sponsor.svg" alt="Sponsor Logo" />
             </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Blog Section -->
-    <section class="blog bg-gray-100 py-16">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4">Latest Blog Posts</h2>
-            <!-- Blog Posts Go Here -->
+<!-- Blog Section -->
+<section class="blog bg-gray-100 py-16">
+    <div class="container mx-auto px-4 sm:px-0">
+        <h2 class="text-3xl font-bold mb-4 text-center sm:text-left">Latest Blog Posts</h2>
+        <!-- Blog Posts Go Here -->
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq bg-gray-200 py-16">
+    <div class="container mx-auto px-4 sm:px-0">
+        <h2 class="text-3xl font-bold mb-4 text-center sm:text-left">Frequently Asked Questions</h2>
+        <!-- FAQ Content Goes Here -->
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="team bg-gray-300 py-16">
+    <div class="container mx-auto px-4 sm:px-0">
+        <h2 class="text-3xl font-bold mb-4 text-center sm:text-left">Meet Our Team</h2>
+        <!-- Team Member Cards Go Here -->
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact bg-gray-200 py-16">
+    <div class="container mx-auto px-4 sm:px-0">
+        <h2 class="text-3xl font-bold mb-4 text-center sm:text-left">Get in Touch</h2>
+        <!-- Contact Form Fields Go Here -->
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="map bg-gray-300 py-16">
+    <div class="container mx-auto">
+        <!-- Google Maps Embed Goes Here -->
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4 sm:px-0">
+        <p class="mb-4 sm:mb-0">&copy; 2024 Kelmscott Senior High School Robotics</p>
+        <div>
+            <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61559577347658" class="mx-2"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/kshsrobotics/" class="mx-2"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@KSHSFRCroboticsteam" class="mx-2"><i class="fab fa-youtube"></i></a>
         </div>
-    </section>
 
-    <!-- FAQ Section -->
-    <section class="faq bg-gray-200 py-16">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
-            <!-- FAQ Content Goes Here -->
-        </div>
-    </section>
+    </div>
+</footer>
 
-    <!-- Team Section -->
-    <section class="team bg-gray-300 py-16">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4">Meet Our Team</h2>
-            <!-- Team Member Cards Go Here -->
-        </div>
-    </section>
-
-
-    <!-- Contact Form -->
-    <section class="contact bg-gray-200 py-16">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
-            <!-- Contact Form Fields Go Here -->
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <section class="map bg-gray-300 py-16">
-        <div class="container mx-auto">
-            <!-- Google Maps Embed Goes Here -->
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <p>&copy; 2024 Kelmscott Senior High School Robotics</p>
-            <div>
-                <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61559577347658" class="mx-2"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/kshsrobotics/" class="mx-2"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/@KSHSFRCroboticsteam" class="mx-2"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
 </body>
 
 </html>
